@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+      .logo{
+      
+        width:20%;
+        float: left; 
+        margin-right:20px;
+          
+      }
+
+            li {
+      list-style-type:none;
+      display: inline-block;
+    
+      color: darkblue;
+      font-size:25px;
+       padding:10px;
+
+    }
+
+    nav {
+      
+      text-align:right;
+      padding:20px;
+  
+    }
+
+        h1{
+            font-size:40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:red;
+        }
+
+
+         p{
+            font-size:20px;
+            color:darkblue;
+            
+        }
+        
+        img{
+            float:right;
+            width:50%;
+            height:auto;
+            border-radius:25%;
+        }
+
+
+        body{
+          background-color: beige;
+        }
+       button{
+        float:right;
+       }
+      
+    
+        
+        
+
+
+    </style>
+    
+
+</head>
+
+<body>
+
+    <nav>
+      <div class="logo"><img src="logo7.png"/></div>
+
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="girl.jpg">
+
+
+ 
+    <h1>........About My Services</h1>
+    <h1>My Development process</h1>
+
+
+    <p>I have completed Mysql project on School Management System <br>
+    and recently working on web developing project </p>
+
+
+  
+    <p>Website design</p>
+    <p>Project Concept & Development</p>
+    <p>Corporate Identity</p>
+    <p>Blog & Social Networking Design</p>
+    <p>Social Media Campaign</p>
+
+
+
+
+<p>Do you Need my services? Request a Quote...........</p>
+
+
+
+<script>
+  a =['image/portfolio-designer1.jpg','image/portfolio-designer2.jpg','image/portfolio-designer3.jpg','image/portfolio-designer4.jpg']
+  i=0;
+  function change(){
+      document.getElementById("id").src = a[i];
+      i++;
+      if (i>a.length){
+          i=0;
+      }
+  }
+
+  setInterval(change,2000)
+</script>
+
+<img src="image/portfolio-designer3.jpg" width="100%"  height="100px"  id="id" class="button" />
+<p class="button"  onclick="change()"></p>
+
+<button onclick="change()">Next</button>
+<marquee><img src="image/portfolio-designer3.jpg"   width="100%" height="100px" id="id" class="button"></marquee>
+
+
+</body>
+
+</html>
